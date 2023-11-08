@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- estilo -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +26,8 @@
 
 <body>
     <header>
-
         <nav>
-            <img id="logo" width="50%" src="images/logo-mercado-liebre.svg" alt="logo liebre">
+            <img id="logo" src="images/logo-mercado-liebre.svg" alt="logo liebre">
 
             <section id="search-bar" >
                 <input type="text"><i class="fa-solid fa-magnifying-glass"></i>
@@ -55,105 +59,43 @@
             </section>
         </nav>
     </header>
-    <img  width="100%" src="/images/img-home-banner.jpg" alt="Banner">  
-
-    <main class="container">
-        <section>
-            <h2>Basado en tu última visita</h2>
-
-            <div class="bloque">
-                <img src="images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera">
-                    <div class="desc producto-desc-box">
-                    
-                        <div class="icon-posicion">
-                            <i  class="fa-solid fa-truck product-delivery-icon"></i>
-                        </div>
-                                                
-                        <div class="info">
-                            <div class="txtPrecio">$6.770</div>
-                            <div class="txtDescuento">40% OFF</div>
-                        </div>
-                    </div>
-                <h3> Cafetera Moulinex</h3>
-
+    <section class="container">
+        <div class="form">
             
-            </div>
-            <div  class="bloque">
-                <img src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook">
-                <div class="desc ">
-                    <i id="imgEnvio" class="fa-solid fa-truck"></i>
-                    <p>$230.000</p>
-                    <p class="txtDescuento"> 20% off</p>
-                </div>
-                <h3> MacBook Pro 2019</h3>
-            </div>
-            <div  class="bloque">
-                <img src="images/img-samsung-galaxy-s10.jpg" alt="imagen Samsung">
-                <div class="desc">
-                    <i id="imgEnvio" class="fa-solid fa-truck"></i>
-                    <p> $70.500 </p>
-                    <p class="txtDescuento"> 10% off</p>
-                </div>
-                <h3>Samsung Galaxy S10</h3>
-            </div>
-            <div  class="bloque">
-                <img src="images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv">
-                <div class="desc">
-                    <i id="imgEnvio" class="fa-solid fa-truck"></i>
-                    <p> $23.200 </p>
-                    <p class="txtDescuento"> 5% off</p>
-                </div>
-                <h3>SmartTv Samsung 43</h3>
-            </div>
-        </section>
+    <form action="/home" method="post">
+        <label for="">Nombre Y Apellido</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+    
+        <label for="">Nombre de usuario</label>
+        <input type="text" name="usuario" id=" usuario" placeholder="Ingrese su nombre de usuario">
 
-        <section>
+        <label for="">Correo electronico</label>
+        <input type="text" name="email" id="email" placeholder="ingrese un correo electronico">
+    
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" name="fechaNac" id="fechaNac">
 
-            <h2>Ofertas</h2>
+        <label for="">Domicilio</label>
+        <input type="text" name="domicilio" id="email" placeholder="ingrese su domicilio">
+    
+ 
+    
+        <label for="">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Ingrese una contraseña">
+    
+        
+        <label for="">Repita Contraseña</label>
+        <input type="password" name="passwordRep" id="passwordRep" placeholder="Repita su contraseña">
+   
+    </form>
+        <form action="/">
+           <button type="submit"> Registar</button>
+        </form> 
+</div>
 
-            <div  class="bloque">
-                <img src="images/img-cafetera-moulinex.jpg" alt="imagen de la cafetera">
+    </section>
 
-                <div class="desc">
-                    <i id="imgEnvio" class="fa-solid fa-truck"></i>
-                    <p>$6.770 </p>
-                    <p class="txtDescuento">40% OFF</p>
-                </div>
-                <h3> Cafetera Moulinex</h3>
-            </div>
-            <div  class="bloque">
-                <img width="200" src="images/img-macbook-pro-2019.jpg" alt="imagen de MacBook">
 
-                <div class="desc">
-                    <i id="imgEnvio" class="fa-solid fa-truck"></i>
-                    <p>$230.000</p>
-                    <p class="txtDescuento"> 20% off</p>
-                </div>
-                <h3> MacBook Pro 2019</h3>
-
-            </div>
-            <div  class="bloque">
-                <img width="200" src="images/img-samsung-galaxy-s10.jpg" alt="imagen Samsung">
-                <div class="desc">
-                    <i id="imgEnvio" class="fa-solid fa-truck"></i>
-                    <p> $70.500 </p>
-                    <p class="txtDescuento"> 10% off</p>
-                </div>
-                <h3>Samsung Galaxy S10</h3>
-
-            </div>
-            <div  class="bloque">
-                <img width="200" src="images/img-tv-samsung-smart.jpg" alt="imagen del SmartTv">
-                <div class="desc">
-                    <i id="imgEnvio" class="fa-solid fa-truck"></i>
-                    <p> $23.200 </p>
-                    <p class="txtDescuento"> 5% off</p>
-                </div>
-                <h3>SmartTv Samsung 43</h3>
-            </div>
-        </section>
-
-    </main>
     <footer>
 
         <section id="secTarj">
