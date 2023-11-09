@@ -1,145 +1,106 @@
-body{
-    /* background-color:#ebebeb ; */
-    text-size-adjust: 12px;
-}
-*{
+* {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    box-sizing: border-box;
+    font-size: 12px;
 
 }
 
-.container{
-    align-content: center;
-    width: 90%;
-    background-color:#ebebeb ;
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-
-}
-.bloque{
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    background-color: white;
-}
-.desc .product-delivery-icon{
-    color: #39b54a;
-    display: flex;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position:relative;
-    right: 20px;
-    top: -15px;
-   
-    justify-content: center;
- 
-}
-.icon-posicion{
-    display: flex;
-    justify-content: flex-end;
-}
-.txtDescuento{
-    color: #39b54a;
-    width: 70%;
-}
-.txtPrecio{
-    width: 30%;
-}
-.info{
-
-    display: flex;
-}
-
-#menu{
-background-color: #0000ff;
-border-radius: 10%;
-padding: 1%;
-color: white;
-}
-
-.burger-menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-}
-#search-bar{
-   text-align: center;
-}
-.bloque img{
-    width: 40%;
-}
-
-#logo{
+#logo {
     width: 20%;
 }
 
-footer{
-   
-    background-color: white;
-      
-}
-nav{
-    background-color: #EAC926;
-    align-content: center;
-  
+.titular {
+    font-size: 24px;
 }
 
-footer{
+.precio-txt {
+    font-size: 18px;
+}
+
+.desc-txt {
+    font-size: 16px;
+}
+
+#search-bar {
     text-align: center;
 }
-.footer-svg {
-    fill: #0000ff;
-    width: 2em;
-    margin-bottom: 10px;
-    
-}
-/* tablets */
-@media(min-whidth: 460px){
 
-
-}
-@media(max-width:768px){
-
-
-}
-/* mobile last */
-@media (max-width: 460px){
-    *{   
-         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .desc{
-        display: none;
-    }
-
-   .burger-menu{
-    justify-content: start;
-   }
-
-}
-
-.product-desc-box {
-        position: relative;
- }
- footer #secCopy {
+#searchBar {
     display: flex;
-    
- }
+    flex-direction: column;
+    align-items: center;
 
- /* ● Debemos centrar la sección main y que ocupe un 90% del ancho de la pantalla.
-● Entre cada artículo hay una separación de 10 píxeles.
-● Nos piden que manejemos el logo del envío, el precio, el porcentaje de descuento
-y la descripción del artículo como elementos de una caja dentro de la caja general
-del artículo.
+}
+
+
+
+header {
+    background-color: #EAC926;
+
+
+}
+
+footer section {
+    text-align: center;
+    background-color: white;
+}
+
+footer i {
+    color: blue;
+    margin-bottom: 10px;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+
+}
+
+main section {
+    width: 90%;
+    /* background-color:white; */
+    margin: 10px;
+
+
+}
+.caja-art{
+    border-top: 1px solid #ebebeb ;
+    margin: 15px;
+
+}
+.articulo{
+    background-color: white;
+}
+
+/*
 ● Nos piden que la misma tenga un borde superior de 1 píxel, línea sólida y color
 #ebebeb.
 ● Debe tener separado el contenido de sus bordes en 15 píxeles en cada uno de sus
 lados. */
+.burger-menu {
+    color: white;
+    padding: 1%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+.menu-btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+/* Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
