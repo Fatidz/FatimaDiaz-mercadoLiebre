@@ -1,0 +1,10 @@
+.input-box label {
+    flex-direction: column;
+}
+.caja-recordar{
+    display: inline;
+    width: 20px;
+}
+.caja-recordar label{
+    font-size: 16px;
+}

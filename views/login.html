@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- estilo -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/css/register-style.css">
+    <link rel="stylesheet" href="css/login-style.css">
+    <link rel="stylesheet" href="css/register-style.css">
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,99 +72,32 @@
     <img width="100%" src="/images/img-home-banner.jpg" alt="banner-home">
     <main>
         <section class="container">
-            <form class="form-register" action="/register" method="">
-
-                <div class="input-box">
-
-                    <input type="text" placeholder="Nombre y Apellido" required pattern=".{4,}"
-                        title="El nombre debe tener al menos 4 caracteres.">
-
-
-                </div>
+            <form action="/" method="">
                 <div class="input-box">
                     <!-- <label for="usuario">Nombre de usuari@:</label> -->
                     <input type="text" placeholder="Nombre de usuario" required pattern=".{3,}"
                         title="El nombre de usuario debe tener al menos 3 caracteres.">
                 </div>
-                <div class="input-box">
-                    <!-- <label for="email">Email:</label> -->
-                    <input type="email" required placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <label for="">Fecha de nacimiento: </label> <br>
-                    <input type="date" value="YYY/mm/dd" required placeholder="yyy/mm/dd">
-                </div>
-                <div class="input-box">
-                    <!-- <label for="">Domicilio:</label> -->
-                    <input type="text" placeholder="Domicilio" required pattern=".{4,}">
-                </div>
-                <div class="columna-caja">
-                    <div class="lista-input">
-                        <label for="">Perfil de usuario:</label>
-                        <ul type="none">
-                            <li>
-                                <input type="radio" name="perfil" value="comprador" required>
-                                <label for="comprador">Comprador</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="perfil" value="vendedor" required>
-                                <label for="vendedor">Vendedor</label>
-                            </li>
-                        </ul>
-                    </div>
 
-                    <div class="lista-input">
-                        <label for="">Categorias de interes</label>
-
-                        <ul type="none">
-                            <li>
-                                <input type="checkbox" name="electro">
-                                <label for="electro">Electro</label>
-
-                            </li>
-                            <li>
-                                <input type="checkbox" name="moda">
-                                <label for="moda">Moda</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="hogar">
-                                <label for="hogar">Hogar</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="jugueteria">
-                                <label for="jugueteria">Jugueteria</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="vida-sana">
-                                <label for="vida-sana">Vida sana</label>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="input-box">
-                    <label>Seleccionar una foto de usuario:</label>
-                    <input type="file" name="avatar" accept=".jpg" multiple required>
-                </div>
                 <div class="input-box">
                     <!-- <label for="">Contraseña:</label> -->
                     <input type="password" placeholder="Contraseña" pattern=".{6,}" required
                         title="Debe ingresar al menos 6 (seis) caracteres">
                 </div>
-                <div class="input-box">
-                    <!-- <label for="">Confirmar Contraseña:</label> -->
-                    <input type="password" placeholder="Confirmar Contraseña" pattern=".{6,}" required
-                        title="Debe ingresar al menos 6 (seis) caracteres">
+                <div class="caja-recordar">
+                    <input name="recuerdame" type="checkbox">
+                    <label for="recuerdame">Recuerdame</label>
                 </div>
+
                 <div class="form-btn">
-                    <button class="borrar-btn" type="reset">Borrar</button>
-                    <button class="submit-btn" type="submit">Registrarse</button>
+                    <button  class="borrar-btn" type="reset">Borrar</button>
+                    <button class="submit-btn" type="submit">Enviar</button>
 
                 </div>
 
             </form>
         </section>
+
 
     </main>
     <footer>
