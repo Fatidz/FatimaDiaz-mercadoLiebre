@@ -8,3 +8,15 @@
 .caja-recordar label{
     font-size: 16px;
 }
+.submitLogin-btn:hover{
+    background-color: #0022AA;
+}
+.submitLogin-btn{
+    color: white;
+    background-color: #1259c3;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}

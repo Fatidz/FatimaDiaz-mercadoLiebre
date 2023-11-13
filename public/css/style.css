@@ -6,7 +6,6 @@
     --gris-oscuro: #666;
     --gris-claro: #ebebeb;
     --verde: #39b54a;
-
     /* Tipografía */
     --font-familia: 'Roboto', sans-serif;
 }
@@ -17,8 +16,6 @@
     /* margin: 0px; */
     /* padding: 0px;  */
     box-sizing: border-box;
-
-
 }
 
 #logo {
@@ -28,7 +25,6 @@
 #searchBar input {
     border-radius: 5px;
     padding: 5px;
-
 }
 
 .titular {
@@ -45,8 +41,7 @@
 
 .desc-txt {
     font-size: 16px;
-   
-   
+    display: none;
 }
 
 .descuento-txt {
@@ -62,18 +57,15 @@
     align-items: end;
 }
 
-
-
 #searchBar {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-
 }
 
 #navBar {
-   display: flex;
+    display: flex;
 }
 
 #loginBar {
@@ -82,40 +74,57 @@
 
 header {
     background-color: var(--amarillo);
-    display:block
+    display: block
 }
-header ul{
+
+header ul {
     display: flex;
     align-items: flex-end;
     padding: 5px;
 }
-header li{
+
+header li {
     padding: 10px;
 }
-footer{
+footer i:hover {
+    color: var(--amarillo);
+}
+
+footer {
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    padding: 20px;
+    text-align: center;
+}
+footer div{
+    text-align: left;
+    margin-bottom: 10px;
+    display: flex;
 }
 
 footer section {
     text-align: center;
     background-color: white;
+    flex-basis: 30%;
+    margin: 10px;
+  
+
 }
 
 footer i {
     color: blue;
     margin-bottom: 10px;
-    
-
 }
 
 main {
     align-items: center;
     background-color: #ebebeb;
     padding: 10px;
-
 }
-
-
 
 main section {
     display: flex;
@@ -128,7 +137,6 @@ section {
     /* display: flex; */
     align-items: center;
     justify-content: center;
-
 }
 
 .caja-art {
@@ -136,14 +144,13 @@ section {
     margin: 15px;
     position: relative;
 }
-.cajaBar{
-  display: flex;
-  
+
+.cajaBar {
+    display: flex;
 }
 
 main .articulo {
     background-color: white;
-
     width: calc(25% - 20px);
     margin: 10px;
     box-sizing: border-box;
@@ -151,10 +158,9 @@ main .articulo {
 
 .encabezado {
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
 .encabezado i {
@@ -171,6 +177,26 @@ main .articulo {
     background-color: blue;
 }
 
+.articulo {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.articulo:hover .desc-txt {
+    display: block;
+}
+
+/* Girar el ícono del camión en hover */
+.articulo:hover .product-delivery-icon {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.articulo:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 .menu-btn {
     align-items: center;
     display: flex;
@@ -181,7 +207,8 @@ main .articulo {
 .art-img {
     width: 90%;
 }
-.ico-posi{
+
+.ico-posi {
     display: inline;
     flex-direction: column;
     width: 50%;
@@ -243,15 +270,18 @@ main .articulo {
     #loginBar {
         display: none;
     }
-    #searchBar{
+
+    #searchBar {
         width: 50%;
         margin-left: 0%;
     }
-    #logo{
+
+    #logo {
         width: 50%;
         margin-right: 0%;
     }
-    .ico-posi{
+
+    .ico-posi {
         flex-wrap: wrap;
         width: 100%;
         margin-bottom: 10px;
@@ -260,14 +290,15 @@ main .articulo {
     main .articulo {
         width: 100%;
     }
-    .encabezado 
-    {
+
+    .encabezado {
         display: flex;
-       flex-wrap:wrap;
-        
-       
+        flex-wrap: wrap;
+
+
     }
-    .ico-posi{
+
+    .ico-posi {
         display: inline;
         width: 100%;
     }
