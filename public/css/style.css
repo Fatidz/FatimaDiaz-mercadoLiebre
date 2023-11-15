@@ -121,9 +121,12 @@ footer i {
 }
 
 main {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #ebebeb;
     padding: 10px;
+    align-items: center;
 }
 
 main section {
