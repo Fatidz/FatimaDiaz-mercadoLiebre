@@ -124,6 +124,10 @@ main {
     align-items: center;
     background-color: #ebebeb;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
 }
 
 main section {
